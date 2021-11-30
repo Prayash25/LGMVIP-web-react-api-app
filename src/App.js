@@ -1,34 +1,7 @@
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
-
 import React from "react";
 import './App.css';
 class App extends React.Component {
 
-	// Constructor
 	constructor(props) {
 		super(props);
 
@@ -69,7 +42,6 @@ class App extends React.Component {
           <div class="image"><img src={item.avatar}/></div>
           <div class="content"><div class="header">{ item.first_name }&nbsp;{ item.last_name }</div>
           <div class="meta"><span class="date"></span>{ item.email }</div>
-          {/* <div class="description">{ item.last_name }</div> */}
         </div>
           <div class="extra content"><a><i aria-hidden="true" class="user icon"></i>{item.id}</a></div>
       </div>
