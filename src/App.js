@@ -25,16 +25,16 @@ class App extends React.Component {
         });
       })
     }
-    nextpage(){
-      fetch("https://reqres.in/api/users?page=2")
-      .then((res) => res.json())
-      .then((json) => {
-        this.setState({
-          items: json,
-          DataisLoaded: true
-        });
-      })
-    }
+    // nextpage(){
+    //   fetch("https://reqres.in/api/users?page=2")
+    //   .then((res) => res.json())
+    //   .then((json) => {
+    //     this.setState({
+    //       items: json,
+    //       DataisLoaded: true
+    //     });
+    //   })
+    // }
   render() {
     const { DataisLoaded, items } = this.state;
     if (!DataisLoaded) return <div>
@@ -42,6 +42,7 @@ class App extends React.Component {
 
     return (
       <div className="App" style={{ backgroundColor: "#61147d" }}>
+        <nav style={{ testAllign: "centre", fontStyle:"oblique" ,color:"white", fontSize:"30px"}}>Fitness Mania</nav>
         <h1 style={{ testAllign: "centre", color: 'white', fontFamily: "itallic", fontSize: "460%" }}> User Data </h1>
         
           <div class="ui stackable three column grid">
